@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q1
+        const grades = [56, 87, 99, 40];
+        grades.push(68);
+        grades.shift();
+        grades[2] = 60;
+
+        console.log(grades);
+
+        // find sum 
+        let sum = 0;
+        for (let i = 0; i < grades.length; i++) {
+            sum += grades[i];
+        }
+        // find average
+        const average = sum / grades.length;
+        console.log(average);
+
+        // Q2
+        const car = {
+            carName:'C10',
+            carBrand:'Chevrolet',
+            subModel: 'base',
+            exteriorColor:'Black',
+            interiorColor:'Black',
+            transmission:'Automatic',
+            yearOfProduction:1969,
+            numberofWheels:4,
+            envirnomentalFriendly:false
+        };
+
+        for (const key in car) {
+            console.log(`${key}: ${car[key]}`);
+        }
+
+
+
+    </script>
+</body>
+</html>
